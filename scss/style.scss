@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// google font 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@900&display=swap');
+// font awesome
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#container{
+    font-family: 'Montserrat', sans-serif;
+    
+    // landing-sec-style 
+    @import "landing-sec";
+    // main-sec-style 
+    @import "main-sec";
+    // footer-sec-style 
+    @import "footer-sec";
+
+    // mediaQuery allways goes on last line 
+    // media-style 
+    @import "mediaQuery";
+}

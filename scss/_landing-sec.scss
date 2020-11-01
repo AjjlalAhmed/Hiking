@@ -1,0 +1,138 @@
+#landing-sec {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px auto;
+  background: url("../images/landing-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  .layer {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  // header
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px;
+    height: 20vh;
+    // logo
+    #logo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      z-index: 1;
+      .logo-img {
+        width: 180px;
+      }
+    }
+    // nav-bar
+    #nav-bar {
+      align-self: center;
+      justify-self: left;
+      grid-column: 2 / 4;
+      grid-row: 1 / 2;
+      z-index: 2;
+      ul {
+        li {
+          display: inline-block;
+          padding: 20px;
+          text-transform: capitalize;
+          list-style: none;
+          a {
+            color: #fff;
+            font-size: 1rem;
+            text-decoration: none;
+            font-weight: 700;
+            transition: .5s ease;
+            &:hover{
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+    #icon {
+      z-index: 1;
+      align-self: center;
+      justify-self: center;
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+      a {
+        text-decoration: none;
+        padding: 5px;
+        i {
+          font-size: 1rem;
+          color: #75101e;
+          border-radius: 20px;
+          padding: 5px;
+          background-color: #fff;
+        }
+      }
+    }
+    #menr-bar {
+      z-index: 1;
+      display: none;
+    }
+  }
+  // hero-sec
+  #hero-sec {
+    z-index: 1;
+    .hero-content {
+      display: grid;
+      grid-template-columns: 100px 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      .hero-heading {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+        justify-self: left;
+        font-size: 10rem;
+        font-family: "Kanit", sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #ffdbc4;
+      }
+      .hero-text {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        justify-self: left;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #ffdbc4;
+      }
+      .btn {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+        justify-self: left;
+        padding: 80px 0px;
+        .btn-read__more {
+          padding: 15px 30px;
+          border: 1px solid transparent;
+          background-color: #ffdbc4;
+          color: #75101e;
+          font-family: "Kanit", sans-serif;
+          font-size: 1rem;
+          text-transform: capitalize;
+          border-radius: 15px;
+          transition: .5s ease;
+            &:hover{
+              background: #000;
+              color: #75101e;
+            }
+        }
+      }
+    }
+  }
+}
+.read-more__toggle{
+  display: none;
+}
